@@ -1,0 +1,302 @@
+# =========================================
+# FRONTEND (Vite + React + TypeScript)
+# =========================================
+
+# Dependencias
+node_modules/
+.pnp/
+.pnp.js
+
+# Build outputs
+dist/
+build/
+.vite/
+
+# Testing
+coverage/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment files (¡NUNCA subas credenciales!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Misc frontend
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.sublime-project
+*.sublime-workspace
+
+# =========================================
+# BACKEND / CLOUD (Python + AWS Lambda)
+# =========================================
+
+# Python virtualenv
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+pythonenv*
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+PIPFILE.lock
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# =========================================
+# AWS & SERVERLESS (Crítico para hackathon)
+# =========================================
+
+# Credenciales y configuración local de AWS Academy
+.aws/
+.aws-sam/
+.aws-sam/build/
+.aws-sam/cache/
+~/.aws/
+~/.aws/credentials
+~/.aws/config
+*.pem
+*.key
+id_rsa
+id_dsa
+
+# Serverless Framework
+.serverless/
+.sls/
+*.serverless
+
+# Terraform (si usas IaC)
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform.tfstate.backup
+.terraform.tfstate.lock.info
+
+# SAM CLI
+samconfig.toml
+
+# Amplify (si generas archivos locales)
+amplify/
+amplify/\#current-cloud-backend
+amplify/.config/local-*
+amplify/logs
+amplify/mock-data
+amplify/mock-api-resources
+amplify/backend/amplify-meta.json
+amplify/backend/.temp
+build/
+dist/
+node_modules/
+aws-exports.js
+awsconfiguration.json
+amplifyconfiguration.json
+amplifyconfiguration.dart
+amplify-build-config.json
+amplify-gradle-config.json
+amplifytools.xcconfig
+.secret-*
+
+# =========================================
+# APACHE AIRFLOW (Orquestación)
+# =========================================
+
+# Airflow local (si lo usas en desarrollo)
+airflow.cfg
+airflow.db
+airflow-webserver.pid
+airflow-scheduler.pid
+webserver_config.py
+standalone_admin_password.txt
+
+# Logs de Airflow (crecen rápido)
+logs/
+airflow/logs/
+
+# Variables y conexiones locales de Airflow
+variables.json
+connections.json
+
+# =========================================
+# ML/DATA SCIENCE (SageMaker opcional)
+# =========================================
+
+# Modelos entrenados (ocupan mucho espacio)
+*.pkl
+*.pickle
+*.h5
+*.pth
+*.pt
+*.onnx
+*.joblib
+
+# Datasets (no subas datos sensibles)
+data/
+dataset/
+*.csv
+*.parquet
+*.jsonl
+*.xlsx
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# =========================================
+# IDE & EDITORS
+# =========================================
+
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# IntelliJ / PyCharm
+.idea/
+*.iml
+*.iws
+out/
+
+# Vim
+*~
+*.swp
+*.swo
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# =========================================
+# SISTEMA OPERATIVO
+# =========================================
+
+# macOS
+.DS_Store
+.AppleDouble
+._*
+.Spotlight-V100
+.Trashes
+.VolumeIcon.icns
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+
+# =========================================
+# ARCHIVOS TEMPORALES & SENSIBLES
+# =========================================
+
+# Archivos personales
+*.local
+*.secret
+*.key
+*.private
+config.json
+credentials.json
+service-account.json
+
+# Archivos de backup
+*.bak
+*.backup
+*.orig
+*.tmp
+*.temp
+
+# Archivos de lock
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# =========================================
+# EXCEPCIONES (archivos que SÍ debes subir)
+# =========================================
+
